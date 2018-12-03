@@ -6,8 +6,6 @@
   
 }
 .flex-wrap{
-  position: relative;
-  display: inline-block;
   width:100%;
   box-shadow: 0 0px 0px rgba(34, 25, 25, 0.4);
   text-align: center;
