@@ -1,21 +1,14 @@
-.free-WaterfallFlow{
-  width:100%;
-  column-count:2;/*column-count 属性规定元素应该被分隔的列数：*/
-  column-gap:1px;
-  line-height:1px;
-  
+@import '../../template/home_temp.wxss';
+.gridview {
+    position: relative;
+    overflow: hidden;
 }
-.flex-wrap{
-  width:100%;
-  box-shadow: 0 0px 0px rgba(34, 25, 25, 0.4);
-  text-align: center;
+.gridview-item {
+    position: relative;
+    float: left;
+    width:50%;
 }
-.image{
-  width: 100%;
-}
-
-.flex-wrap image{
-  width:100%;
-  margin:0 auto;
-  
+.content{
+  display: flex;
+  flex-direction: column;
 }

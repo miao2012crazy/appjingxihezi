@@ -1,0 +1,18 @@
+<template name="home_item">
+<navigator url="../task/index?task_id={{id}} ">
+<view class='content'>
+  <view class='home_temp_container'>
+    <view class='view_rel'>
+      <image class='image' src='{{src}}'></image>
+      <view class='view_hor'>{{task_desc}} </view>
+      <view class='view_hor_sub'>
+        <image class='head' src='{{nick_head}}'></image>
+        <view class='nick_name'>{{nick_name}}</view>
+        <image class='abc' src='{{nick_head}}'></image>
+        <view class='abc'>{{num}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+</navigator>
+</template>

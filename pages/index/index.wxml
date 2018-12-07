@@ -1,25 +1,9 @@
-<view class="weui-search-bar">
-  <view class="weui-search-bar__form">
-    <view class="weui-search-bar__box">
-      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
-      <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{wxSearchData.value}}" bindfocus="wxSerchFocus" bindinput="wxSearchInput" bindblur="wxSearchBlur" />
-      <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
-        <icon type="clear" size="14"></icon>
-      </view>
-    </view>
+<import src="../../template/home_temp.wxml"/>
+<view class='content'>
+<view>搜索功能</view>
+<view class="gridview" style='background:white;'>
+  <view class="gridview-item" wx:for="{{images}}" wx:key="item">
+  <template is="home_item" data="{{...item}}"></template>
   </view>
 </view>
-<!-- 瀑布流 -->
-<view class="free-WaterfallFlow">
-  <block>
-    <view class="flex-wrap" wx:for="{{images}}" wx:key='{{item.src}}' wx:if="{{item.id%2!=''}}">
-      <image mode="widthFix" src="{{item.src}}">
-      </image>
-    </view>
-  </block>
-  <block>
-    <view class="flex-wrap" wx:for="{{images}}" wx:key='{{item.src}}' wx:if="{{item.id%2==''}}">
-      <image mode="widthFix" src="{{item.src}}"></image>
-    </view>
-  </block>
 </view>

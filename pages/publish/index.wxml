@@ -1,2 +1,12 @@
-<!--pages/publish/index.wxml-->
-<text>pages/publish/index.wxml</text>
+<view class="page_content">
+  <view class="weui-cell">
+    <view>
+      <image src="../../images/1.jpg" class='icon'></image>
+    </view>
+    <view class='task_title'>输入任务</view>
+  </view>
+  <view class='publish_content'>
+    <textarea class='task_content' placeholder="任务内容～～～～" placeholder-class="placeholder" bindinput="inputContent" />
+  </view>
+
+</view>

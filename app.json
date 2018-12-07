@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/publish/index",
     "pages/customized/index",
-    "pages/user/index"
+    "pages/user/index",
+    "pages/task/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
